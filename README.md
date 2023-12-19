@@ -1,6 +1,6 @@
 # About this repo
 
-A GitHub Page template, based on Vue3 + Vite.
+A GitHub Page template, based on React + Vite.
 
 Before the start, you need to create a empty repo and add `Repository secrets` named `ACCESS_TOKEN`.
 
@@ -15,10 +15,10 @@ npm install -g degit
 
 cd /path/to/your/project-name
 
-degit https://github.com/zb81/vue3-ghp-starter
+degit https://github.com/zb81/react-ghp-starter
 ```
 
-## 2. Globally replace `vue3-ghp-starter` with your own `project_name`
+## 2. Globally replace `react-ghp-starter` with your own `project_name`
 
 - `package.json`
 - `vite.config.ts`
