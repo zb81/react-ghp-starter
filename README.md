@@ -2,7 +2,7 @@
 
 A GitHub Page template, based on React + Vite.
 
-Before the start, you need to create a empty repo and add `Repository secrets` named `ACCESS_TOKEN`.
+Before the start, you need to know:
 
 > [About Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#about-encrypted-secrets)
 >
