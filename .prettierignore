@@ -1,0 +1,9 @@
+public
+dist
+
+.vscode
+.idea
+.github
+.husky
+
+pnpm-lock.yaml

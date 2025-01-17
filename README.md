@@ -1,6 +1,6 @@
 # About this repo
 
-A GitHub Page template, based on React + Vite.
+A GitHub Page template, based on React + Vite + Shadcn + Tailwind.
 
 Before the start, you need to know:
 
