@@ -18,10 +18,7 @@ cd /path/to/your/project-name
 degit https://github.com/zb81/react-ghp-starter
 ```
 
-## 2. Globally replace `react-ghp-starter` with your own `project_name`
-
-- `package.json`
-- `.env.production`
+## 2. Replace `react-ghp-starter` in `vite.config.ts`
 
 ## 3. Develop and deploy
 

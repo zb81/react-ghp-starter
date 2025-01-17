@@ -4,6 +4,7 @@ import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/react-ghp-starter',
   plugins: [react()],
   resolve: {
     alias: {
