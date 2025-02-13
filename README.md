@@ -13,9 +13,9 @@ Before the start, you need to know:
 ```bash
 npm install -g degit
 
-cd /path/to/your/project-name
+cd /path/to/your/workspace
 
-degit https://github.com/zb81/react-ghp-starter
+degit https://github.com/zb81/react-ghp-starter project-name
 ```
 
 ## 2. Replace `react-ghp-starter` in `vite.config.ts`
