@@ -32,21 +32,22 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = window.document.documentElement
-
     root.classList.remove('light', 'dark')
 
     if (theme === 'system') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
-        .matches
-        ? 'dark'
-        : 'light'
-
+      const result = window.matchMedia('(prefers-color-scheme: dark)')
+      const systemTheme = result.matches ? 'dark' : 'light'
+      const toggle = (e: MediaQueryListEvent) => {
+        root.classList.remove('light', 'dark')
+        root.classList.add(e.matches ? 'dark' : 'light')
+      }
+      result.addEventListener('change', toggle)
       root.classList.add(systemTheme)
-      return
+      return () => result.removeEventListener('change', toggle)
     }
 
     root.classList.add(theme)
-  }, [theme])
+  }, [storageKey, theme])
 
   const value = {
     theme,
@@ -63,6 +64,7 @@ export function ThemeProvider({
   )
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useTheme = () => {
   const context = useContext(ThemeProviderContext)
 
